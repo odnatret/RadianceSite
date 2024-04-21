@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     background: url("../img/background.png")
     no-repeat center center;
-    height: 100vh;
+    height: 200vh;
     background-size: cover;
     background-attachment: fixed;
     font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
 }
 
 
@@ -21,7 +22,16 @@ body {
     font-weight:800 ;
 }
 
+.Top {
+    position: relative;
+    z-index: 1;
+}
+
 .header {
+    margin-top: 50px;
+    position:absolute;
+    z-index: 9999;
+    align-items: center;
     margin: 0%;
     width: 100%;
     height: 70px;
@@ -29,24 +39,28 @@ body {
 
     text-align: center;
 
-    background-color: black;
+    
     display: flex;
-    flex-flow: row nowrap;
+    
 
-    justify-content: flex-start;
+    
     align-items: center;
 
+    justify-content: center;
 }
 
 .header-logo {
+    padding: 0.9em;
     color: white;
-    font-size: 1.2em;
+    font-size: 1.8em;
     text-decoration: none;
     font-weight: 800;
-    margin-right: 4em;
+     
 }
 
 .menu {
+    justify-content: center;
+    display: flex;
     width: 100%;
     flex-grow: 1;
     color: white;
@@ -68,11 +82,50 @@ body {
 }
 
 .button-text-header{
+    font-size: 1em;
     color: white;
     text-decoration: none;
     font-weight: 400;
-    margin-right: 0.9em;
+    margin-right: 1.5em;
+}
 
+.button-text-header:hover {
+    color: red;
+}
+
+.header-back {
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+
+.header-buy-back{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
 }
 
 
+.sotrudniki{
+    position:relative;
+    max-width: 100%;
+    margin: 0px auto;
+    min-height: 10em;
+    z-index: 10;
+    left: 5vw;
+
+}
+.sotrudnik {
+    width: 150px;
+    height: 200px;
+    position: relative;
+    background-color: #fff;
+}
+.sotrudnik-image {
+
+    height: 128px;
+    width: 128px;
+}
