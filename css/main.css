@@ -110,6 +110,7 @@ body {
 
 
 .sotrudniki{
+    display: flex;
     position:relative;
     max-width: 100%;
     margin: 0px auto;
@@ -119,17 +120,38 @@ body {
 
 }
 .sotrudnik {
-    width: 150px;
-    height: 200px;
     position: relative;
+    width: 392px;
+    height: 512px;
     background-color: #fff;
 }
 .sotrudnik-image {
-
-    height: 128px;
-    width: 128px;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 256px;
+    width: 256px;
 }
 
+.sotrudnik-name {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 300px;
+}
+
+.sotrudnik-name-top {
+    display: block;
+    font-size: 20px;
+    font-weight: 450;
+}
 
 #myVideo {
     height: 100%;
